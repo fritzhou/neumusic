@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#EDF4FC" />
+  <meta name="description" content="NeuMusic — an Android music player with offline playback, online discovery, 16 PRO themes, advanced audio controls, optional accounts and a soft atmospheric interface." />
+  <title>NeuMusic — Music for a brighter you</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    (() => {
+      const saved = localStorage.getItem('neumusic-site-theme');
+      const dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+    })();
+  </script>
+</head>
+<body>
+  <div class="page-atmosphere" aria-hidden="true"><i></i><i></i><i></i></div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="NeuMusic home">
+      <span class="brand-icon"><img src="assets/phase39-icon.webp" alt="" /></span>
+      <span class="brand-copy"><strong>Neu<span>Music</span></strong><small>Music for a brighter you</small></span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#themes">Themes</a>
+      <a href="#features">Features</a>
+      <a href="#screens">App</a>
+      <a href="#pro">PRO</a>
+    </nav>
+    <div class="header-actions">
+      <button class="theme-toggle" type="button" aria-label="Switch website theme"><span class="sun">☀</span><span class="moon">☾</span></button>
+      <a class="download-mini" href="#download">Download app</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero shell">
+      <div class="hero-copy reveal">
+        <div class="release-pill"><span></span> Phase 39 · NeuMusic 2.8.1</div>
+        <h1>Your music.<br><em>Your atmosphere.</em></h1>
+        <p class="hero-lead">A local-first Android music player that combines your offline library, online discovery, powerful playback controls and a deeply personal visual system—without forcing an account just to listen.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#download">Download the app <span>↓</span></a>
+          <a class="button secondary" href="#themes">Explore 16 PRO themes</a>
+        </div>
+        <div class="hero-badges">
+          <span>Android 8.0+</span><span>Offline first</span><span>Optional account</span><span>17 total looks</span>
+        </div>
+      </div>
+
+      <div class="hero-stage reveal" aria-label="NeuMusic Phase 39 app preview">
+        <div class="stage-orb one"></div><div class="stage-orb two"></div>
+        <div class="phone hero-phone"><img src="assets/phase39-home-aurora.webp" alt="NeuMusic Aurora theme Home screen" /></div>
+        <div class="glass-note top-note"><b>16 PRO themes</b><span>Every screen gets its own atmosphere.</span></div>
+        <div class="glass-note bottom-note"><b>Offline + online</b><span>Your files first. Discovery when connected.</span></div>
+      </div>
+    </section>
+
+    <section class="quick-strip shell reveal" aria-label="NeuMusic highlights">
+      <div><b>16</b><span>PRO atmospheres</span></div>
+      <div><b>5-band</b><span>Equalizer + Custom</span></div>
+      <div><b>7 days</b><span>PRO theme trial</span></div>
+      <div><b>0</b><span>accounts required to listen</span></div>
+    </section>
+
+    <section class="new-section shell" id="new">
+      <div class="section-heading reveal"><span class="kicker">PHASE 39</span><h2>The visual system grew up.</h2><p>Phase 39 turns themes into complete environments—not simple recolors. The same system now reaches surfaces, glow, atmosphere, branding, system bars and the player itself.</p></div>
+      <div class="new-grid">
+        <article class="new-card reveal"><span class="index">01</span><div class="visual atmosphere-visual"><i></i><i></i><i></i></div><h3>Atmospheric theme engine</h3><p>Radial light, translucent layered faces, frosted organic forms, colored sheen and soft directional depth are generated per theme.</p></article>
+        <article class="new-card reveal"><span class="index">02</span><div class="visual logo-visual"><img src="assets/phase39-vector-logos.webp" alt="Theme-aware NeuMusic vector logos" /></div><h3>Theme-aware branding</h3><p>One vector logo geometry powers 17 palettes across in-app branding, splash presentation and adaptive launcher variants.</p></article>
+        <article class="new-card reveal"><span class="index">03</span><div class="visual player-visual"><img src="assets/phase39-player-ocean.webp" alt="NeuMusic Ocean Glass Now Playing screen" /></div><h3>Adaptive Now Playing</h3><p>Controls are measured first and artwork uses the remaining safe viewport. Short windows can scroll without shrinking important controls.</p></article>
+        <article class="new-card reveal"><span class="index">04</span><div class="visual edge-visual"><div class="edge-phone"><i></i><i></i><strong>EDGE<br>TO<br>EDGE</strong></div></div><h3>True edge-to-edge UI</h3><p>Transparent system bars, safe insets, cutout coverage and dynamic icon contrast keep the experience continuous from top to bottom.</p></article>
+      </div>
+    </section>
+
+    <section class="themes-section" id="themes">
+      <div class="shell">
+        <div class="themes-heading reveal">
+          <div><span class="kicker">NEUMUSIC PRO</span><h2>16 themes.<br>16 different moods.</h2></div>
+          <p>NeuMusic Original stays free. PRO unlocks sixteen full atmosphere systems—each with its own background, surface, text, accent, glow and branding palette.</p>
+        </div>
+
+        <div class="original-theme reveal">
+          <div class="original-preview"><div class="mini-ui"><div class="mini-head"></div><div class="mini-feature"></div><div class="mini-row"></div><div class="mini-row short"></div></div></div>
+          <div><span class="free-label">FREE</span><h3>NeuMusic Original</h3><p>The familiar cool blue NeuMusic palette, with Light, Dark and System appearance modes.</p></div>
+          <div class="palette"><i style="--c:#EDF4FC"></i><i style="--c:#F8FBFF"></i><i style="--c:#1E73FF"></i><i style="--c:#101831"></i></div>
+        </div>
+
+        <div class="theme-toolbar reveal">
+          <div class="theme-filters" role="group" aria-label="Filter themes">
+            <button class="active" data-filter="all">All 16</button><button data-filter="light">Light</button><button data-filter="dark">Dark</button><button data-filter="pastel">Pastel</button>
+          </div>
+          <span class="theme-count">16 PRO themes</span>
+        </div>
+        <div class="theme-grid" id="themeGrid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="feature-world" id="features">
+      <div class="shell">
+        <div class="section-heading light reveal"><span class="kicker">MORE THAN A THEME PACK</span><h2>A complete music player underneath it.</h2><p>NeuMusic keeps the interface soft, but the feature set is built for serious everyday listening.</p></div>
+
+        <div class="feature-categories">
+          <article class="feature-category reveal">
+            <div class="category-title"><span>♫</span><div><small>LIBRARY & DISCOVERY</small><h3>Your music, wherever it lives.</h3></div></div>
+            <div class="feature-pills"><span>Device MediaStore library</span><span>Songs · Albums · Artists · Genres · Folders</span><span>Library scan</span><span>Search, sort & filter</span><span>Jamendo online discovery</span><span>Music of the Week</span></div>
+          </article>
+          <article class="feature-category reveal">
+            <div class="category-title"><span>▶</span><div><small>PLAYBACK</small><h3>Controls that go beyond play and pause.</h3></div></div>
+            <div class="feature-pills"><span>Queue + Play Next</span><span>Shuffle & repeat</span><span>Gapless playback</span><span>Playback speed</span><span>5-band EQ + presets + Custom</span><span>ReplayGain-style normalization</span><span>Sleep timer + end-of-song</span><span>Fade-out timer</span><span>Background playback</span><span>Headphone disconnect handling</span></div>
+          </article>
+          <article class="feature-category reveal">
+            <div class="category-title"><span>♥</span><div><small>PERSONAL</small><h3>The app learns from what you actually play.</h3></div></div>
+            <div class="feature-pills"><span>Favorites</span><span>Custom playlists</span><span>Create tab</span><span>Continue Listening</span><span>Recently Played</span><span>Most Played + real play counts</span><span>Listening recap</span><span>Total listening time</span><span>Top artists & tracks</span><span>TXT/LRC lyric import</span></div>
+          </article>
+          <article class="feature-category reveal">
+            <div class="category-title"><span>☁</span><div><small>ACCOUNT & DATA</small><h3>Connected when you want it. Local when you don't.</h3></div></div>
+            <div class="feature-pills"><span>Optional Google account support</span><span>Editable profile</span><span>Merge & Sync confirmation</span><span>Favorites & playlist sync</span><span>Preferences & listening sync</span><span>Encrypted session storage</span><span>JSON Backup & Restore</span><span>Audio files stay on your device</span></div>
+          </article>
+          <article class="feature-category reveal">
+            <div class="category-title"><span>✦</span><div><small>EXPERIENCE</small><h3>Designed to feel like one system.</h3></div></div>
+            <div class="feature-pills"><span>16 PRO themes</span><span>Light · Dark · System</span><span>Theme-aware launcher & splash</span><span>Edge-to-edge layouts</span><span>Adaptive compact player</span><span>Mini-player</span><span>Media notification controls</span><span>English / Filipino / System language</span><span>Play · Search · Recent shortcuts</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="screens shell" id="screens">
+      <div class="section-heading centered reveal"><span class="kicker">REAL PHASE 39 UI</span><h2>One app. Different atmospheres.</h2><p>These are actual Phase 39 verification captures from the updated application.</p></div>
+      <div class="screen-showcase">
+        <article class="screen-card tall reveal"><div class="screen-img"><img src="assets/phase39-home-aurora.webp" alt="Aurora theme Home" /></div><div><span>AURORA</span><h3>Home</h3><p>Atmospheric surfaces reach every card, stat and navigation element.</p></div></article>
+        <article class="screen-card reveal"><div class="screen-img"><img src="assets/phase39-player-ocean.webp" alt="Ocean Glass Now Playing" /></div><div><span>OCEAN GLASS</span><h3>Now Playing</h3><p>Responsive artwork budgeting keeps playback controls available.</p></div></article>
+        <article class="screen-card reveal"><div class="screen-img"><img src="assets/phase39-playlists-cherry.webp" alt="Cherry Noir Playlists" /></div><div><span>CHERRY NOIR</span><h3>Playlists</h3><p>More compact cards with the same restrained theme glow.</p></div></article>
+        <article class="screen-card reveal"><div class="screen-img"><img src="assets/phase39-themes-ocean.webp" alt="Theme gallery" /></div><div><span>THEME GALLERY</span><h3>Make it yours</h3><p>Filter, preview and apply themes from one dedicated gallery.</p></div></article>
+      </div>
+    </section>
+
+    <section class="account-section shell">
+      <div class="account-visual reveal"><div class="phone account-phone"><img src="assets/phase39-drawer.webp" alt="NeuMusic account drawer" /></div></div>
+      <div class="account-copy reveal"><span class="kicker">OPTIONAL ACCOUNT</span><h2>Sign in for sync.<br>Not for permission to listen.</h2><p>NeuMusic still opens directly to Home. An account is an optional layer for profile, trial state and sync—not a gate in front of your own music.</p>
+        <div class="account-points"><div><b>Google account support</b><span>PKCE browser sign-in with profile name and photo support.</span></div><div><b>Merge before sync</b><span>Changing accounts asks before music metadata is merged.</span></div><div><b>Privacy-minded storage</b><span>Audio files are not uploaded; session material uses encrypted local storage.</span></div></div>
+      </div>
+    </section>
+
+    <section class="pro-section shell" id="pro">
+      <div class="pro-panel reveal">
+        <div class="pro-copy"><span class="kicker">NEUMUSIC PRO</span><h2>Unlock every atmosphere.</h2><p>Try the full 16-theme collection for seven days. NeuMusic Original remains available for free.</p><div class="pro-tags"><span>16 premium themes</span><span>7-day trial</span><span>Original stays free</span></div><a class="button primary" href="#download">Get NeuMusic</a><small>Purchase/subscription management is still a launch placeholder in the current build.</small></div>
+        <div class="pro-stack" aria-hidden="true"><i class="card c1"></i><i class="card c2"></i><i class="card c3"></i><i class="card c4"></i><div class="crown">✦</div></div>
+      </div>
+    </section>
+
+    <section class="download shell" id="download">
+      <div class="download-panel reveal">
+        <div class="download-icon"><img src="assets/phase39-icon.webp" alt="NeuMusic icon" /></div>
+        <div class="download-copy"><span class="kicker">ANDROID</span><h2>Download NeuMusic.</h2><p>The landing page is ready for the APK. Replace the placeholder when your signed release build is ready.</p><div class="download-meta"><span>Android 8.0+</span><span>APK distribution</span><span>Version 2.8.1</span></div></div>
+        <div class="download-action"><button class="button download-placeholder" type="button" disabled>APK coming soon</button><small>Release file placeholder</small></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer shell">
+    <div class="footer-brand"><img src="assets/phase39-icon.webp" alt="" /><div><strong>NeuMusic</strong><span>Music for a brighter you.</span></div></div>
+    <div class="footer-links"><a href="#themes">Themes</a><a href="#features">Features</a><a href="#screens">App</a><a href="#download">Download</a></div>
+    <p>NeuMusic · Phase 39</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
