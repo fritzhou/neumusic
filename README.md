@@ -1,14 +1,14 @@
-# NeuMusic Landing Page — Phase 39
+# NeuMusic Landing Page
 
-Landing page refreshed for NeuMusic 2.8.1 / Phase 39.
+Official landing page for NeuMusic 2.8.1.
 
 Highlights:
-- Light/dark website appearance
+- Light appearance by default, with an optional persistent dark mode
 - NeuMusic Original + all 16 PRO theme previews
-- Phase 39 atmospheric theme system
-- Real Phase 39 verification screenshots
-- Updated playback, library, personalization, account/sync and audio features
-- PRO/trial section
+- Atmospheric theme and glow system
+- Real NeuMusic app screenshots
+- Playback, library, personalization, account/sync and advanced audio features
+- PRO theme trial section
 - APK download placeholder
 
 The page is static and can be deployed directly with GitHub Pages.

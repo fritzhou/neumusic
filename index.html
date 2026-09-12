@@ -9,9 +9,8 @@
   <link rel="stylesheet" href="styles.css" />
   <script>
     (() => {
-      const saved = localStorage.getItem('neumusic-site-theme');
-      const dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
-      document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+      const saved = localStorage.getItem('neumusic-site-theme-v2');
+      document.documentElement.dataset.theme = saved === 'dark' ? 'dark' : 'light';
     })();
   </script>
 </head>
@@ -20,7 +19,7 @@
 
   <header class="site-header" id="top">
     <a class="brand" href="#top" aria-label="NeuMusic home">
-      <span class="brand-icon"><img src="phase39-icon.webp" alt="" /></span>
+      <span class="brand-icon"><img src="assets/app-icon.webp" alt="" /></span>
       <span class="brand-copy"><strong>Neu<span>Music</span></strong><small>Music for a brighter you</small></span>
     </a>
 
@@ -40,7 +39,7 @@
   <main>
     <section class="hero shell">
       <div class="hero-copy reveal">
-        <div class="release-pill"><span></span> Phase 39 · NeuMusic 2.8.1</div>
+        <div class="release-pill"><span></span> NeuMusic 2.8.1</div>
         <h1>Your music.<br><em>Your atmosphere.</em></h1>
         <p class="hero-lead">A local-first Android music player that combines your offline library, online discovery, powerful playback controls and a deeply personal visual system—without forcing an account just to listen.</p>
         <div class="hero-actions">
@@ -52,9 +51,9 @@
         </div>
       </div>
 
-      <div class="hero-stage reveal" aria-label="NeuMusic Phase 39 app preview">
+      <div class="hero-stage reveal" aria-label="NeuMusic app preview">
         <div class="stage-orb one"></div><div class="stage-orb two"></div>
-        <div class="phone hero-phone"><img src="phase39-home-aurora.webp" alt="NeuMusic Aurora theme Home screen" /></div>
+        <div class="phone hero-phone"><img src="assets/home-aurora.webp" alt="NeuMusic Aurora theme Home screen" /></div>
         <div class="glass-note top-note"><b>16 PRO themes</b><span>Every screen gets its own atmosphere.</span></div>
         <div class="glass-note bottom-note"><b>Offline + online</b><span>Your files first. Discovery when connected.</span></div>
       </div>
@@ -68,11 +67,11 @@
     </section>
 
     <section class="new-section shell" id="new">
-      <div class="section-heading reveal"><span class="kicker">PHASE 39</span><h2>The visual system grew up.</h2><p>Phase 39 turns themes into complete environments—not simple recolors. The same system now reaches surfaces, glow, atmosphere, branding, system bars and the player itself.</p></div>
+      <div class="section-heading reveal"><span class="kicker">WHAT'S NEW</span><h2>The visual system grew up.</h2><p>NeuMusic themes are complete environments—not simple recolors. The same system reaches surfaces, glow, atmosphere, branding, system bars and the player itself.</p></div>
       <div class="new-grid">
         <article class="new-card reveal"><span class="index">01</span><div class="visual atmosphere-visual"><i></i><i></i><i></i></div><h3>Atmospheric theme engine</h3><p>Radial light, translucent layered faces, frosted organic forms, colored sheen and soft directional depth are generated per theme.</p></article>
-        <article class="new-card reveal"><span class="index">02</span><div class="visual logo-visual"><img src="phase39-vector-logos.webp" alt="Theme-aware NeuMusic vector logos" /></div><h3>Theme-aware branding</h3><p>One vector logo geometry powers 17 palettes across in-app branding, splash presentation and adaptive launcher variants.</p></article>
-        <article class="new-card reveal"><span class="index">03</span><div class="visual player-visual"><img src="phase39-player-ocean.webp" alt="NeuMusic Ocean Glass Now Playing screen" /></div><h3>Adaptive Now Playing</h3><p>Controls are measured first and artwork uses the remaining safe viewport. Short windows can scroll without shrinking important controls.</p></article>
+        <article class="new-card reveal"><span class="index">02</span><div class="visual logo-visual"><img src="assets/vector-logos.webp" alt="Theme-aware NeuMusic vector logos" /></div><h3>Theme-aware branding</h3><p>One vector logo geometry powers 17 palettes across in-app branding, splash presentation and adaptive launcher variants.</p></article>
+        <article class="new-card reveal"><span class="index">03</span><div class="visual player-visual"><img src="assets/now-playing-ocean.webp" alt="NeuMusic Ocean Glass Now Playing screen" /></div><h3>Adaptive Now Playing</h3><p>Controls are measured first and artwork uses the remaining safe viewport. Short windows can scroll without shrinking important controls.</p></article>
         <article class="new-card reveal"><span class="index">04</span><div class="visual edge-visual"><div class="edge-phone"><i></i><i></i><strong>EDGE<br>TO<br>EDGE</strong></div></div><h3>True edge-to-edge UI</h3><p>Transparent system bars, safe insets, cutout coverage and dynamic icon contrast keep the experience continuous from top to bottom.</p></article>
       </div>
     </section>
@@ -130,17 +129,17 @@
     </section>
 
     <section class="screens shell" id="screens">
-      <div class="section-heading centered reveal"><span class="kicker">REAL PHASE 39 UI</span><h2>One app. Different atmospheres.</h2><p>These are actual Phase 39 verification captures from the updated application.</p></div>
+      <div class="section-heading centered reveal"><span class="kicker">REAL APP UI</span><h2>One app. Different atmospheres.</h2><p>Real captures from NeuMusic 2.8.1 show how the visual system carries across the app.</p></div>
       <div class="screen-showcase">
-        <article class="screen-card tall reveal"><div class="screen-img"><img src="phase39-home-aurora.webp" alt="Aurora theme Home" /></div><div><span>AURORA</span><h3>Home</h3><p>Atmospheric surfaces reach every card, stat and navigation element.</p></div></article>
-        <article class="screen-card reveal"><div class="screen-img"><img src="phase39-player-ocean.webp" alt="Ocean Glass Now Playing" /></div><div><span>OCEAN GLASS</span><h3>Now Playing</h3><p>Responsive artwork budgeting keeps playback controls available.</p></div></article>
-        <article class="screen-card reveal"><div class="screen-img"><img src="phase39-playlists-cherry.webp" alt="Cherry Noir Playlists" /></div><div><span>CHERRY NOIR</span><h3>Playlists</h3><p>More compact cards with the same restrained theme glow.</p></div></article>
-        <article class="screen-card reveal"><div class="screen-img"><img src="phase39-themes-ocean.webp" alt="Theme gallery" /></div><div><span>THEME GALLERY</span><h3>Make it yours</h3><p>Filter, preview and apply themes from one dedicated gallery.</p></div></article>
+        <article class="screen-card tall reveal"><div class="screen-img"><img src="assets/home-aurora.webp" alt="Aurora theme Home" /></div><div><span>AURORA</span><h3>Home</h3><p>Atmospheric surfaces reach every card, stat and navigation element.</p></div></article>
+        <article class="screen-card reveal"><div class="screen-img"><img src="assets/now-playing-ocean.webp" alt="Ocean Glass Now Playing" /></div><div><span>OCEAN GLASS</span><h3>Now Playing</h3><p>Responsive artwork budgeting keeps playback controls available.</p></div></article>
+        <article class="screen-card reveal"><div class="screen-img"><img src="assets/playlists-cherry.webp" alt="Cherry Noir Playlists" /></div><div><span>CHERRY NOIR</span><h3>Playlists</h3><p>More compact cards with the same restrained theme glow.</p></div></article>
+        <article class="screen-card reveal"><div class="screen-img"><img src="assets/themes-ocean.webp" alt="Theme gallery" /></div><div><span>THEME GALLERY</span><h3>Make it yours</h3><p>Filter, preview and apply themes from one dedicated gallery.</p></div></article>
       </div>
     </section>
 
     <section class="account-section shell">
-      <div class="account-visual reveal"><div class="phone account-phone"><img src="phase39-drawer.webp" alt="NeuMusic account drawer" /></div></div>
+      <div class="account-visual reveal"><div class="phone account-phone"><img src="assets/account-drawer.webp" alt="NeuMusic account drawer" /></div></div>
       <div class="account-copy reveal"><span class="kicker">OPTIONAL ACCOUNT</span><h2>Sign in for sync.<br>Not for permission to listen.</h2><p>NeuMusic still opens directly to Home. An account is an optional layer for profile, trial state and sync—not a gate in front of your own music.</p>
         <div class="account-points"><div><b>Google account support</b><span>PKCE browser sign-in with profile name and photo support.</span></div><div><b>Merge before sync</b><span>Changing accounts asks before music metadata is merged.</span></div><div><b>Privacy-minded storage</b><span>Audio files are not uploaded; session material uses encrypted local storage.</span></div></div>
       </div>
@@ -155,7 +154,7 @@
 
     <section class="download shell" id="download">
       <div class="download-panel reveal">
-        <div class="download-icon"><img src="phase39-icon.webp" alt="NeuMusic icon" /></div>
+        <div class="download-icon"><img src="assets/app-icon.webp" alt="NeuMusic icon" /></div>
         <div class="download-copy"><span class="kicker">ANDROID</span><h2>Download NeuMusic.</h2><p>The landing page is ready for the APK. Replace the placeholder when your signed release build is ready.</p><div class="download-meta"><span>Android 8.0+</span><span>APK distribution</span><span>Version 2.8.1</span></div></div>
         <div class="download-action"><button class="button download-placeholder" type="button" disabled>APK coming soon</button><small>Release file placeholder</small></div>
       </div>
@@ -163,9 +162,9 @@
   </main>
 
   <footer class="site-footer shell">
-    <div class="footer-brand"><img src="phase39-icon.webp" alt="" /><div><strong>NeuMusic</strong><span>Music for a brighter you.</span></div></div>
+    <div class="footer-brand"><img src="assets/app-icon.webp" alt="" /><div><strong>NeuMusic</strong><span>Music for a brighter you.</span></div></div>
     <div class="footer-links"><a href="#themes">Themes</a><a href="#features">Features</a><a href="#screens">App</a><a href="#download">Download</a></div>
-    <p>NeuMusic · Phase 39</p>
+    <p>NeuMusic · Version 2.8.1</p>
   </footer>
 
   <script src="script.js"></script>

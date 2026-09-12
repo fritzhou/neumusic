@@ -4,7 +4,7 @@ const themeColor = document.querySelector('meta[name="theme-color"]');
 
 function applySiteTheme(mode) {
   root.dataset.theme = mode;
-  localStorage.setItem('neumusic-site-theme', mode);
+  localStorage.setItem('neumusic-site-theme-v2', mode);
   themeColor?.setAttribute('content', mode === 'dark' ? '#08131f' : '#EDF4FC');
   themeToggle?.setAttribute('aria-label', mode === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
 }
