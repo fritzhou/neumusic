@@ -3,6 +3,11 @@ releaseStyles.rel = 'stylesheet';
 releaseStyles.href = 'release.css';
 document.head.appendChild(releaseStyles);
 
+const mediaStyles = document.createElement('link');
+mediaStyles.rel = 'stylesheet';
+mediaStyles.href = 'media-update.css';
+document.head.appendChild(mediaStyles);
+
 const root = document.documentElement;
 const themeToggle = document.querySelector('.theme-toggle');
 const themeColor = document.querySelector('meta[name="theme-color"]');
@@ -82,3 +87,35 @@ const observer = new IntersectionObserver(entries => {
   });
 }, {threshold: .1});
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// 2.11.11 landing media refresh using the current app captures supplied for the release.
+const apkUrl = 'https://github.com/fritzhou/neumusic/releases/download/v2.11.11/neuMusic-beta.apk';
+const heroImg = document.querySelector('.hero-phone img');
+if (heroImg) { heroImg.src = 'assets/app-home.webp'; heroImg.alt = 'Current NeuMusic Home screen'; }
+
+const newCards = document.querySelectorAll('.new-grid .new-card');
+if (newCards[1]) {
+  const visual = newCards[1].querySelector('.visual');
+  if (visual) { visual.className = 'visual lyrics-visual'; visual.innerHTML = '<img src="assets/app-lyrics.webp" alt="NeuMusic Lyrics Preview feature">'; }
+  const h = newCards[1].querySelector('h3'); if (h) h.textContent = 'Lyrics preview & full lyrics';
+  const p = newCards[1].querySelector('p'); if (p) p.textContent = 'Preview the current lines directly in Now Playing, then open the full lyrics view when you want to follow the song more closely.';
+}
+if (newCards[2]) {
+  const img = newCards[2].querySelector('img'); if (img) { img.src = 'assets/app-now-playing.webp'; img.alt = 'Current NeuMusic Now Playing screen'; }
+}
+
+const screenImgs = document.querySelectorAll('.screen-showcase .screen-card .screen-img img');
+const screenSources = ['assets/app-home.webp','assets/app-now-playing.webp','assets/app-playlists.webp','assets/app-themes.webp'];
+screenImgs.forEach((img, i) => { if (screenSources[i]) img.src = screenSources[i]; });
+const accountImg = document.querySelector('.account-phone img');
+if (accountImg) { accountImg.src = 'assets/app-account.webp'; accountImg.alt = 'NeuMusic optional account drawer'; }
+
+const qr = document.querySelector('.download-qr');
+if (qr) {
+  qr.href = apkUrl;
+  const img = qr.querySelector('img'); if (img) { img.src = 'assets/download-qr.png'; img.alt = 'QR code to download NeuMusic 2.11.11'; }
+}
+const releaseButton = document.querySelector('.release-download');
+if (releaseButton) { releaseButton.href = apkUrl; releaseButton.innerHTML = 'Download the app <span>↓</span>'; }
+
+document.querySelectorAll('a[href*="/releases/latest"]').forEach(a => { if (a.classList.contains('button')) { a.href = apkUrl; a.textContent = 'Download the app'; } });
