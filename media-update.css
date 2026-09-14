@@ -1,0 +1,92 @@
+/* Current NeuMusic app captures supplied for the 2.11.11 landing-page refresh. */
+.hero-phone img,
+.screen-img img,
+.account-phone img,
+.new-card .player-visual img,
+.new-card .lyrics-visual img {
+  image-rendering: auto;
+}
+
+.hero-phone img {
+  object-fit: cover;
+  object-position: center top;
+}
+
+.new-card .lyrics-visual {
+  display: grid;
+  place-items: center;
+  background: #eef6ff;
+}
+.new-card .lyrics-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 9%;
+}
+
+.new-card .player-visual {
+  display: grid;
+  place-items: center;
+  background: #e8f4ff;
+}
+.new-card .player-visual img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  object-fit: cover;
+  object-position: center 17%;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.screen-showcase .screen-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.account-section .account-phone img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+/* Keep the supplied QR square with only a narrow white border. */
+.download-panel .download-qr {
+  padding: 0;
+  gap: 8px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+.download-panel .download-qr:hover {
+  transform: translateY(-2px);
+  box-shadow: none;
+}
+.download-panel .download-qr img {
+  width: 160px;
+  height: 160px;
+  display: block;
+  object-fit: cover;
+  border: 5px solid #fff;
+  border-radius: 0;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(42, 82, 132, .12);
+}
+.download-panel .download-qr span {
+  color: var(--muted);
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: .8px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 760px) {
+  .download-panel .download-qr img {
+    width: min(180px, 52vw);
+    height: min(180px, 52vw);
+  }
+}
