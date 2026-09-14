@@ -6,12 +6,11 @@ Static responsive landing page for NeuMusic 2.11.11.
 
 - Light mode is the default website appearance, with an optional persistent dark mode.
 - Uses the current NeuMusic Original palette as the website base.
-- Shows current real app captures for Home, Now Playing, Playlists, Themes and the optional account drawer.
-- Includes a real Lyrics Preview feature capture.
-- Uses the supplied NeuMusic QR code in the download section.
-- The primary download button points directly to the NeuMusic 2.11.11 beta APK.
+- Shows real in-app captures for all 16 PRO themes.
+- Includes the user-provided NeuMusic download QR code.
+- Download buttons point to the NeuMusic GitHub Releases pages.
 - Explains why NeuMusic is different from a basic offline file player.
-- Covers local library, online discovery, playback/audio tools, listening insights, optional accounts/sync, backup/restore, languages, shortcuts and themes.
+- Covers local library, online discovery, playback/audio tools, listening insights, optional accounts/sync, backup/restore, languages, shortcuts and branding.
 
 ## Theme system shown
 
@@ -19,16 +18,22 @@ NeuMusic Original is free. The 16 PRO themes are:
 
 Arctic Blue, Midnight Navy, Lavender Mist, Mint Breeze, Sunset Peach, Rose Quartz, Emerald Night, Monochrome Silver, Ocean Glass, Solar Gold, Cherry Noir, Cyber Violet, Frosted Sakura, Mocha Cream, Aurora and Graphite Blue.
 
+The premium palette values and screenshots in the landing page are taken from the NeuMusic 2.11.11 app source and verification captures.
+
 ## Download destination
 
-Direct APK:
+Primary button:
 
-`https://github.com/fritzhou/neumusic/releases/download/v2.11.11/neuMusic-beta.apk`
+`https://github.com/fritzhou/neumusic/releases/latest`
 
-Release notes:
+Release history:
 
-`https://github.com/fritzhou/neumusic/releases/tag/v2.11.11`
+`https://github.com/fritzhou/neumusic/releases`
 
 ## Run
 
 Open `index.html` directly in a browser, or serve this folder using any static web host.
+
+
+## Release download
+The Download the app button and QR code point directly to the official v2.11.11 APK GitHub release.
