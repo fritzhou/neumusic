@@ -7,7 +7,6 @@
   <meta name="description" content="NeuMusic 2.11.11 — an offline-first Android music player with 17 visual themes, local library playback, online discovery, advanced audio controls, listening insights and optional sync." />
   <title>NeuMusic — Music for a brighter you</title>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="media-update.css" />
   <script>
     (() => {
       const saved = localStorage.getItem('neumusic-site-theme-v2');
@@ -55,7 +54,7 @@
 
       <div class="hero-stage reveal" aria-label="NeuMusic app preview">
         <div class="stage-orb one"></div><div class="stage-orb two"></div>
-        <div class="phone hero-phone"><img src="assets/app-home-player.webp" alt="NeuMusic Home screen with mini player" /></div>
+        <div class="phone hero-phone"><img src="assets/latest-home.webp" alt="NeuMusic Home screen" /></div>
         <div class="glass-note top-note"><b>16 PRO themes</b><span>Every screen gets its own atmosphere.</span></div>
         <div class="glass-note bottom-note"><b>Offline + online</b><span>Your files first. Discovery when connected.</span></div>
       </div>
@@ -72,8 +71,8 @@
       <div class="section-heading reveal"><span class="kicker">WHAT'S NEW</span><h2>The visual system grew up.</h2><p>NeuMusic themes are complete environments—not simple recolors. The same system reaches surfaces, glow, atmosphere, branding, system bars and the player itself.</p></div>
       <div class="new-grid">
         <article class="new-card reveal"><span class="index">01</span><div class="visual atmosphere-visual"><i></i><i></i><i></i></div><h3>Atmospheric theme engine</h3><p>Radial light, translucent layered faces, frosted organic forms, colored sheen and soft directional depth are generated per theme.</p></article>
-        <article class="new-card reveal"><span class="index">02</span><div class="visual lyrics-visual"><img src="assets/app-lyrics.webp" alt="NeuMusic Lyrics Preview feature" /></div><h3>Lyrics preview & full lyrics</h3><p>Preview the current lines directly in Now Playing, then open the full lyrics view when you want to follow the song more closely.</p></article>
-        <article class="new-card reveal"><span class="index">03</span><div class="visual player-visual"><img src="assets/app-now-playing.webp" alt="NeuMusic Now Playing screen" /></div><h3>Adaptive Now Playing</h3><p>Controls are measured first and artwork uses the remaining safe viewport. Short windows can scroll without shrinking important controls.</p></article>
+        <article class="new-card reveal"><span class="index">02</span><div class="visual lyrics-visual"><img src="assets/lyrics-feature.webp" alt="NeuMusic Lyrics Preview feature" /></div><h3>Lyrics built into Now Playing</h3><p>Preview lyrics without leaving the player, then open the full lyrics view when available. NeuMusic supports imported TXT and LRC lyric files for local listening.</p></article>
+        <article class="new-card reveal"><span class="index">03</span><div class="visual player-visual"><img src="assets/ui-now-playing.webp" alt="NeuMusic Now Playing screen" /></div><h3>Adaptive Now Playing</h3><p>Controls are measured first and artwork uses the remaining safe viewport. Short windows can scroll without shrinking important controls.</p></article>
         <article class="new-card reveal"><span class="index">04</span><div class="visual edge-visual"><div class="edge-phone"><i></i><i></i><strong>EDGE<br>TO<br>EDGE</strong></div></div><h3>True edge-to-edge UI</h3><p>Transparent system bars, safe insets, cutout coverage and dynamic icon contrast keep the experience continuous from top to bottom.</p></article>
       </div>
     </section>
@@ -86,16 +85,43 @@
       </div>
 
       <div class="why-grid">
-        <article class="why-card reveal"><span class="why-icon">01</span><h3>Local-first, not account-first</h3><p>Your device library is the core experience. NeuMusic opens directly to Home and does not require sign-in just to play music you already own.</p></article>
-        <article class="why-card reveal"><span class="why-icon">02</span><h3>Themes change the whole identity</h3><p>The 16 PRO themes change backgrounds, surfaces, text, accents, glow, atmospheric forms, app branding, splash presentation and launcher variants—not just a highlight color.</p></article>
-        <article class="why-card reveal"><span class="why-icon">03</span><h3>Offline core, online discovery</h3><p>Your local library keeps working without internet. When connected, Jamendo discovery and Music of the Week add new ways to explore without replacing your own files.</p></article>
-        <article class="why-card reveal"><span class="why-icon">04</span><h3>Your listening history becomes useful</h3><p>Continue Listening, Recently Played, Most Played with real play counts, listening recap, total listening time and top artists/tracks turn playback history into something you can actually use.</p></article>
-        <article class="why-card reveal"><span class="why-icon">05</span><h3>Advanced audio without a crowded UI</h3><p>Gapless playback, playback speed, a five-band equalizer, presets, Custom EQ, normalization, queue controls and sleep/fade tools live behind the same calm neumorphic interface.</p></article>
-        <article class="why-card reveal"><span class="why-icon">06</span><h3>Sync is optional and deliberate</h3><p>Google account support is optional. NeuMusic asks before Merge & Sync, keeps audio files on the device, encrypts session data locally and supports JSON backup/restore.</p></article>
+        <article class="why-card reveal">
+          <span class="why-icon">01</span>
+          <h3>Local-first, not account-first</h3>
+          <p>Your device library is the core experience. NeuMusic opens directly to Home and does not require sign-in just to play music you already own.</p>
+        </article>
+        <article class="why-card reveal">
+          <span class="why-icon">02</span>
+          <h3>Themes change the whole identity</h3>
+          <p>The 16 PRO themes change backgrounds, surfaces, text, accents, glow, atmospheric forms, app branding, splash presentation and launcher variants—not just a highlight color.</p>
+        </article>
+        <article class="why-card reveal">
+          <span class="why-icon">03</span>
+          <h3>Offline core, online discovery</h3>
+          <p>Your local library keeps working without internet. When connected, Jamendo discovery and Music of the Week add new ways to explore without replacing your own files.</p>
+        </article>
+        <article class="why-card reveal">
+          <span class="why-icon">04</span>
+          <h3>Your listening history becomes useful</h3>
+          <p>Continue Listening, Recently Played, Most Played with real play counts, listening recap, total listening time and top artists/tracks turn playback history into something you can actually use.</p>
+        </article>
+        <article class="why-card reveal">
+          <span class="why-icon">05</span>
+          <h3>Advanced audio without a crowded UI</h3>
+          <p>Gapless playback, playback speed, a five-band equalizer, presets, Custom EQ, normalization, queue controls and sleep/fade tools live behind the same calm neumorphic interface.</p>
+        </article>
+        <article class="why-card reveal">
+          <span class="why-icon">06</span>
+          <h3>Sync is optional and deliberate</h3>
+          <p>Google account support is optional. NeuMusic asks before Merge & Sync, keeps audio files on the device, encrypts session data locally and supports JSON backup/restore.</p>
+        </article>
       </div>
 
       <div class="difference-panel reveal">
-        <div><span class="kicker">WHAT MAKES IT SPECIAL</span><h3>It combines personalization, playback and privacy without turning your offline player into a mandatory streaming account.</h3></div>
+        <div>
+          <span class="kicker">WHAT MAKES IT SPECIAL</span>
+          <h3>It combines personalization, playback and privacy without turning your offline player into a mandatory streaming account.</h3>
+        </div>
         <div class="difference-points">
           <span><b>Own files first</b><small>MediaStore library remains the foundation.</small></span>
           <span><b>Full visual atmospheres</b><small>Actual UI captures for every PRO theme.</small></span>
@@ -107,9 +133,23 @@
 
     <section class="themes-section" id="themes">
       <div class="shell">
-        <div class="themes-heading reveal"><div><span class="kicker">THEME SYSTEM</span><h2>16 PRO themes.<br>Actual app designs.</h2></div><p>These previews use NeuMusic's real theme colors and real Home-screen captures from the app. Each theme has its own background, surfaces, text, accent, glow, atmosphere and branding palette.</p></div>
-        <div class="original-theme reveal"><div class="original-preview"><div class="mini-ui"><div class="mini-head"></div><div class="mini-feature"></div><div class="mini-row"></div><div class="mini-row short"></div></div></div><div><span class="free-label">FREE</span><h3>NeuMusic Original</h3><p>The familiar cool blue NeuMusic palette, with Light, Dark and System appearance modes.</p></div><div class="palette"><i style="--c:#EAF2FB"></i><i style="--c:#F7FAFE"></i><i style="--c:#2D7FF9"></i><i style="--c:#10182F"></i></div></div>
-        <div class="theme-toolbar reveal"><div class="theme-filters" role="group" aria-label="Filter themes"><button class="active" data-filter="all">All 16</button><button data-filter="light">Light</button><button data-filter="dark">Dark</button><button data-filter="pastel">Pastel</button></div><span class="theme-count">16 PRO themes</span></div>
+        <div class="themes-heading reveal">
+          <div><span class="kicker">THEME SYSTEM</span><h2>16 PRO themes.<br>Actual app designs.</h2></div>
+          <p>These previews use NeuMusic's real theme colors and real Home-screen captures from the app. Each theme has its own background, surfaces, text, accent, glow, atmosphere and branding palette.</p>
+        </div>
+
+        <div class="original-theme reveal">
+          <div class="original-preview"><div class="mini-ui"><div class="mini-head"></div><div class="mini-feature"></div><div class="mini-row"></div><div class="mini-row short"></div></div></div>
+          <div><span class="free-label">FREE</span><h3>NeuMusic Original</h3><p>The familiar cool blue NeuMusic palette, with Light, Dark and System appearance modes.</p></div>
+          <div class="palette"><i style="--c:#EAF2FB"></i><i style="--c:#F7FAFE"></i><i style="--c:#2D7FF9"></i><i style="--c:#10182F"></i></div>
+        </div>
+
+        <div class="theme-toolbar reveal">
+          <div class="theme-filters" role="group" aria-label="Filter themes">
+            <button class="active" data-filter="all">All 16</button><button data-filter="light">Light</button><button data-filter="dark">Dark</button><button data-filter="pastel">Pastel</button>
+          </div>
+          <span class="theme-count">16 PRO themes</span>
+        </div>
         <div class="theme-grid" id="themeGrid" aria-live="polite"></div>
       </div>
     </section>
@@ -117,43 +157,86 @@
     <section class="feature-world" id="features">
       <div class="shell">
         <div class="section-heading light reveal"><span class="kicker">MORE THAN A THEME PACK</span><h2>A complete music player underneath it.</h2><p>NeuMusic keeps the interface soft, but underneath it is a full local music stack: library management, Media3 background playback, audio tools, listening statistics, optional sync, backup and personalization.</p></div>
+
         <div class="feature-categories">
-          <article class="feature-category reveal"><div class="category-title"><span>♫</span><div><small>LIBRARY & DISCOVERY</small><h3>Your music, wherever it lives.</h3></div></div><div class="feature-pills"><span>Device MediaStore library</span><span>Songs · Albums · Artists · Genres · Folders</span><span>Library scan + rescan</span><span>Search by title, artist or album</span><span>Sort & filter</span><span>Jamendo online discovery</span><span>Music of the Week</span><span>Local artwork + metadata</span></div></article>
-          <article class="feature-category reveal"><div class="category-title"><span>▶</span><div><small>PLAYBACK</small><h3>Controls that go beyond play and pause.</h3></div></div><div class="feature-pills"><span>Queue + Play Next</span><span>Shuffle & repeat</span><span>Gapless playback</span><span>Playback speed</span><span>5-band EQ</span><span>Named EQ presets + Custom</span><span>Normalization / leveling</span><span>Sleep timer by duration</span><span>End-of-current-song timer</span><span>Sleep fade-out</span><span>Background playback</span><span>Media notification controls</span><span>Headphone disconnect handling</span><span>Queue/session recovery</span></div></article>
-          <article class="feature-category reveal"><div class="category-title"><span>♥</span><div><small>PERSONAL</small><h3>The app learns from what you actually play.</h3></div></div><div class="feature-pills"><span>Favorites</span><span>Custom playlists</span><span>Create tab</span><span>Continue Listening</span><span>Recently Played</span><span>Most Played + real play counts</span><span>Listening recap</span><span>Total listening time</span><span>Top artists</span><span>Top tracks</span><span>TXT/LRC lyric import</span><span>Persistent listening history</span></div></article>
-          <article class="feature-category reveal"><div class="category-title"><span>☁</span><div><small>ACCOUNT & DATA</small><h3>Connected when you want it. Local when you don't.</h3></div></div><div class="feature-pills"><span>Optional Google account support</span><span>Supabase PKCE sign-in flow</span><span>Editable profile</span><span>Merge & Sync confirmation</span><span>Favorites & playlist sync</span><span>Preferences & listening-history sync</span><span>Encrypted session + OAuth state</span><span>Offline profile-edit retry</span><span>JSON Backup & Restore</span><span>Audio files stay on your device</span></div></article>
-          <article class="feature-category reveal"><div class="category-title"><span>✦</span><div><small>EXPERIENCE</small><h3>Designed to feel like one system.</h3></div></div><div class="feature-pills"><span>NeuMusic Original + 16 PRO themes</span><span>Light · Dark · System</span><span>Theme-aware launcher aliases</span><span>Theme-aware native splash</span><span>Android 13+ monochrome icon</span><span>Edge-to-edge layouts</span><span>Adaptive Now Playing viewport</span><span>Mini-player</span><span>English / Filipino / System language</span><span>Play · Search · Recent shortcuts</span><span>FAQ · privacy · terms</span></div></article>
+          <article class="feature-category reveal">
+            <div class="category-title"><span>♫</span><div><small>LIBRARY & DISCOVERY</small><h3>Your music, wherever it lives.</h3></div></div>
+            <div class="feature-pills"><span>Device MediaStore library</span><span>Songs · Albums · Artists · Genres · Folders</span><span>Library scan + rescan</span><span>Search by title, artist or album</span><span>Sort & filter</span><span>Jamendo online discovery</span><span>Music of the Week</span><span>Local artwork + metadata</span></div>
+          </article>
+          <article class="feature-category reveal">
+            <div class="category-title"><span>▶</span><div><small>PLAYBACK</small><h3>Controls that go beyond play and pause.</h3></div></div>
+            <div class="feature-pills"><span>Queue + Play Next</span><span>Shuffle & repeat</span><span>Gapless playback</span><span>Playback speed</span><span>5-band EQ</span><span>Named EQ presets + Custom</span><span>Normalization / leveling</span><span>Sleep timer by duration</span><span>End-of-current-song timer</span><span>Sleep fade-out</span><span>Background playback</span><span>Media notification controls</span><span>Headphone disconnect handling</span><span>Queue/session recovery</span></div>
+          </article>
+          <article class="feature-category reveal">
+            <div class="category-title"><span>♥</span><div><small>PERSONAL</small><h3>The app learns from what you actually play.</h3></div></div>
+            <div class="feature-pills"><span>Favorites</span><span>Custom playlists</span><span>Create tab</span><span>Continue Listening</span><span>Recently Played</span><span>Most Played + real play counts</span><span>Listening recap</span><span>Total listening time</span><span>Top artists</span><span>Top tracks</span><span>TXT/LRC lyric import</span><span>Persistent listening history</span></div>
+          </article>
+          <article class="feature-category reveal">
+            <div class="category-title"><span>☁</span><div><small>ACCOUNT & DATA</small><h3>Connected when you want it. Local when you don't.</h3></div></div>
+            <div class="feature-pills"><span>Optional Google account support</span><span>Supabase PKCE sign-in flow</span><span>Editable profile</span><span>Merge & Sync confirmation</span><span>Favorites & playlist sync</span><span>Preferences & listening-history sync</span><span>Encrypted session + OAuth state</span><span>Offline profile-edit retry</span><span>JSON Backup & Restore</span><span>Audio files stay on your device</span></div>
+          </article>
+          <article class="feature-category reveal">
+            <div class="category-title"><span>✦</span><div><small>EXPERIENCE</small><h3>Designed to feel like one system.</h3></div></div>
+            <div class="feature-pills"><span>NeuMusic Original + 16 PRO themes</span><span>Light · Dark · System</span><span>Theme-aware launcher aliases</span><span>Theme-aware native splash</span><span>Android 13+ monochrome icon</span><span>Edge-to-edge layouts</span><span>Adaptive Now Playing viewport</span><span>Mini-player</span><span>English / Filipino / System language</span><span>Play · Search · Recent shortcuts</span><span>FAQ · privacy · terms</span></div>
+          </article>
         </div>
       </div>
     </section>
 
     <section class="screens shell" id="screens">
-      <div class="section-heading centered reveal"><span class="kicker">REAL APP UI</span><h2>One app. Different atmospheres.</h2><p>Real captures from NeuMusic 2.11.11 show the current Home, Now Playing, Playlists and Themes experience.</p></div>
+      <div class="section-heading centered reveal"><span class="kicker">REAL APP UI</span><h2>One app. Different atmospheres.</h2><p>Real captures from NeuMusic 2.11.11 show how the visual system carries across the app.</p></div>
       <div class="screen-showcase">
-        <article class="screen-card tall reveal"><div class="screen-img"><img src="assets/app-home.webp" alt="NeuMusic Home screen" /></div><div><span>HOME</span><h3>Your library at a glance</h3><p>Music of the Week, Continue Listening and Recently Played stay within reach in the current Home layout.</p></div></article>
-        <article class="screen-card reveal"><div class="screen-img"><img src="assets/app-now-playing.webp" alt="NeuMusic Now Playing screen" /></div><div><span>NOW PLAYING</span><h3>Focused playback</h3><p>Large artwork, essential playback controls, output, share, queue and lyrics are grouped into one responsive player.</p></div></article>
-        <article class="screen-card reveal"><div class="screen-img"><img src="assets/app-playlists.webp" alt="NeuMusic Playlists screen" /></div><div><span>PLAYLISTS</span><h3>Favorites and custom mixes</h3><p>Open Favorites, create playlists and manage saved mixes from one clean library view.</p></div></article>
-        <article class="screen-card reveal"><div class="screen-img"><img src="assets/app-themes.webp" alt="NeuMusic Themes screen" /></div><div><span>THEMES</span><h3>Make it yours</h3><p>Browse NeuMusic Original and the full PRO theme collection with visual previews and filters.</p></div></article>
+        <article class="screen-card tall reveal"><div class="screen-img"><img src="assets/ui-home.webp" alt="NeuMusic Home screen with mini player" /></div><div><span>HOME</span><h3>Home</h3><p>Music of the Week, Continue Listening, Recently Played and the mini-player stay together without crowding the screen.</p></div></article>
+        <article class="screen-card reveal"><div class="screen-img"><img src="assets/ui-now-playing.webp" alt="NeuMusic Now Playing screen" /></div><div><span>NOW PLAYING</span><h3>Player</h3><p>Artwork, playback, device output, sharing, queue and Lyrics Preview live in one responsive player.</p></div></article>
+        <article class="screen-card reveal"><div class="screen-img"><img src="assets/ui-playlists.webp" alt="NeuMusic Playlists screen" /></div><div><span>PLAYLISTS</span><h3>Playlists</h3><p>Favorites and custom playlists are easy to reach, with the mini-player always close when music is active.</p></div></article>
+        <article class="screen-card reveal"><div class="screen-img"><img src="assets/ui-themes.webp" alt="NeuMusic Themes gallery" /></div><div><span>THEMES</span><h3>Theme gallery</h3><p>Browse the free Original look and the 16 PRO visual systems with Light, Dark, Pastel and Premium filtering.</p></div></article>
       </div>
     </section>
 
     <section class="account-section shell">
-      <div class="account-visual reveal"><div class="phone account-phone"><img src="assets/app-account.webp" alt="NeuMusic optional account drawer" /></div></div>
-      <div class="account-copy reveal"><span class="kicker">OPTIONAL ACCOUNT</span><h2>Sign in for sync.<br>Not for permission to listen.</h2><p>NeuMusic still opens directly to Home. An account is an optional layer for profile, trial state and sync—not a gate in front of your own music.</p><div class="account-points"><div><b>Google account support</b><span>PKCE browser sign-in with profile name and photo support.</span></div><div><b>Merge before sync</b><span>Changing accounts asks before music metadata is merged.</span></div><div><b>Privacy-minded storage</b><span>Audio files are not uploaded; session material uses encrypted local storage.</span></div></div></div>
+      <div class="account-visual reveal"><div class="phone account-phone"><img src="assets/ui-account.webp" alt="NeuMusic optional account drawer" /></div></div>
+      <div class="account-copy reveal"><span class="kicker">OPTIONAL ACCOUNT</span><h2>Sign in for sync.<br>Not for permission to listen.</h2><p>NeuMusic still opens directly to Home. An account is an optional layer for profile, trial state and sync—not a gate in front of your own music.</p>
+        <div class="account-points"><div><b>Google account support</b><span>PKCE browser sign-in with profile name and photo support.</span></div><div><b>Merge before sync</b><span>Changing accounts asks before music metadata is merged.</span></div><div><b>Privacy-minded storage</b><span>Audio files are not uploaded; session material uses encrypted local storage.</span></div></div>
+      </div>
     </section>
 
-    <section class="pro-section shell" id="pro"><div class="pro-panel reveal"><div class="pro-copy"><span class="kicker">NEUMUSIC PRO</span><h2>Unlock every atmosphere.</h2><p>Try the full 16-theme collection for seven days. NeuMusic Original remains available for free.</p><div class="pro-tags"><span>16 premium themes</span><span>7-day trial</span><span>Original stays free</span></div><a class="button primary" href="#download">Get NeuMusic</a><small>Purchase/subscription management is still a launch placeholder in the current build.</small></div><div class="pro-stack" aria-hidden="true"><i class="card c1"></i><i class="card c2"></i><i class="card c3"></i><i class="card c4"></i><div class="crown">✦</div></div></div></section>
+    <section class="pro-section shell" id="pro">
+      <div class="pro-panel reveal">
+        <div class="pro-copy"><span class="kicker">NEUMUSIC PRO</span><h2>Unlock every atmosphere.</h2><p>Try the full 16-theme collection for seven days. NeuMusic Original remains available for free.</p><div class="pro-tags"><span>16 premium themes</span><span>7-day trial</span><span>Original stays free</span></div><a class="button primary" href="#download">Get NeuMusic</a><small>Purchase/subscription management is still a launch placeholder in the current build.</small></div>
+        <div class="pro-stack" aria-hidden="true"><i class="card c1"></i><i class="card c2"></i><i class="card c3"></i><i class="card c4"></i><div class="crown">✦</div></div>
+      </div>
+    </section>
 
     <section class="download shell" id="download">
       <div class="download-panel reveal">
-        <div class="download-brand"><div class="download-icon"><img src="assets/app-icon.webp" alt="NeuMusic icon" /></div><div class="download-copy"><span class="kicker">ANDROID · VERSION 2.11.11</span><h2>Download NeuMusic.</h2><p>Download the current NeuMusic beta APK directly. Use the button on this device or scan the QR code from another device.</p><div class="download-meta"><span>Android 8.0+</span><span>APK distribution</span><span>Offline-first</span><span>Optional account</span></div></div></div>
-        <a class="download-qr" href="https://github.com/fritzhou/neumusic/releases/download/v2.11.11/neuMusic-beta.apk" aria-label="Download the NeuMusic 2.11.11 APK"><img src="assets/download-qr.webp" alt="QR code for downloading the NeuMusic app" /><span>Scan to download</span></a>
-        <div class="download-action"><a class="button primary release-download" href="https://github.com/fritzhou/neumusic/releases/download/v2.11.11/neuMusic-beta.apk">Download the app <span>↓</span></a><a class="release-history" href="https://github.com/fritzhou/neumusic/releases/tag/v2.11.11" target="_blank" rel="noopener">View release notes</a><small>Direct APK download from the official NeuMusic GitHub release.</small></div>
+        <div class="download-brand">
+          <div class="download-icon"><img src="assets/app-icon.webp" alt="NeuMusic icon" /></div>
+          <div class="download-copy">
+            <span class="kicker">ANDROID · VERSION 2.11.11</span>
+            <h2>Download NeuMusic.</h2>
+            <p>Download NeuMusic 2.11.11 directly as an APK. Tap the button on Android or scan the QR code from another device.</p>
+            <div class="download-meta"><span>Android 8.0+</span><span>APK distribution</span><span>Offline-first</span><span>Optional account</span></div>
+          </div>
+        </div>
+        <div class="qr-block">
+          <a class="download-qr" href="https://github.com/fritzhou/neumusic/releases/download/v2.11.11/neuMusic-beta.apk" target="_blank" rel="noopener" aria-label="Download NeuMusic 2.11.11 APK">
+            <img src="assets/neumusic-download-qr.png" alt="QR code for the NeuMusic 2.11.11 APK" />
+          </a>
+          <span>Scan to download</span>
+        </div>
+        <div class="download-action">
+          <a class="button primary release-download" href="https://github.com/fritzhou/neumusic/releases/download/v2.11.11/neuMusic-beta.apk" target="_blank" rel="noopener">Download the app <span>↓</span></a>
+          <small>Install only builds published from the official NeuMusic repository.</small>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer shell"><div class="footer-brand"><img src="assets/app-icon.webp" alt="" /><div><strong>NeuMusic</strong><span>Music for a brighter you.</span></div></div><div class="footer-links"><a href="#themes">Themes</a><a href="#features">Features</a><a href="#screens">App</a><a href="#download">Download</a></div><p>NeuMusic · Version 2.11.11</p></footer>
+  <footer class="site-footer shell">
+    <div class="footer-brand"><img src="assets/app-icon.webp" alt="" /><div><strong>NeuMusic</strong><span>Music for a brighter you.</span></div></div>
+    <div class="footer-links"><a href="#themes">Themes</a><a href="#features">Features</a><a href="#screens">App</a><a href="#download">Download</a></div>
+    <p>NeuMusic · Version 2.11.11</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
