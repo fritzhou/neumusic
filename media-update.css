@@ -78,15 +78,15 @@
 }
 .download-panel .download-qr span {
   color: var(--muted);
-  font-size: 9px;
-  font-weight: 900;
-  letter-spacing: .8px;
-  text-transform: uppercase;
 }
 
 @media (max-width: 760px) {
+  .download-panel .download-qr {
+    width: auto;
+    margin: auto;
+  }
   .download-panel .download-qr img {
-    width: min(180px, 52vw);
-    height: min(180px, 52vw);
+    width: 176px;
+    height: 176px;
   }
 }
