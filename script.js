@@ -1,3 +1,8 @@
+const releaseStyles = document.createElement('link');
+releaseStyles.rel = 'stylesheet';
+releaseStyles.href = 'release.css';
+document.head.appendChild(releaseStyles);
+
 const root = document.documentElement;
 const themeToggle = document.querySelector('.theme-toggle');
 const themeColor = document.querySelector('meta[name="theme-color"]');
