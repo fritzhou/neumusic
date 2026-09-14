@@ -5,7 +5,7 @@ const themeColor = document.querySelector('meta[name="theme-color"]');
 function applySiteTheme(mode) {
   root.dataset.theme = mode;
   localStorage.setItem('neumusic-site-theme-v2', mode);
-  themeColor?.setAttribute('content', mode === 'dark' ? '#08131f' : '#EDF4FC');
+  themeColor?.setAttribute('content', mode === 'dark' ? '#0D1928' : '#EAF2FB');
   themeToggle?.setAttribute('aria-label', mode === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
 }
 applySiteTheme(root.dataset.theme || 'light');
@@ -47,11 +47,12 @@ function renderThemes(filter = 'all') {
   const visible = themes.filter(t => filter === 'all' || t.tags.includes(filter));
   grid.innerHTML = visible.map((t, i) => `
     <article class="pro-theme-card reveal visible" style="--tb:${t.bg};--ts:${t.surface};--tsoft:${t.soft};--ta:${t.accent};--tt:${t.text};--t2:${t.secondary}">
-      <div class="theme-mini" aria-hidden="true">
-        <div class="theme-blob b1"></div><div class="theme-blob b2"></div>
+      <div class="theme-mini" aria-label="${t.name} NeuMusic theme preview">
+        <i class="theme-blob b1"></i><i class="theme-blob b2"></i>
         <div class="theme-appbar"><span></span><i></i></div>
-        <div class="theme-feature"><small>THIS WEEK</small><b>Music of the Week</b><em>›</em></div>
-        <div class="theme-line"></div><div class="theme-stats"><i></i><i></i></div>
+        <div class="theme-feature"><small>MUSIC OF THE WEEK</small><b>NeuMusic</b><em>›</em></div>
+        <div class="theme-line"></div>
+        <div class="theme-stats"><i></i><i></i></div>
         <div class="theme-dock"><i></i><i></i><i></i><i></i><i></i></div>
       </div>
       <div class="theme-card-copy"><div><span class="theme-number">${String(i + 1).padStart(2,'0')}</span><h3>${t.name}</h3><small>${t.type === 'dark' ? 'Dark atmosphere' : t.type === 'pastel' ? 'Pastel atmosphere' : 'Light atmosphere'}</small></div><span class="pro-tag">PRO</span></div>
